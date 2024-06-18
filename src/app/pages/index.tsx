@@ -1,10 +1,10 @@
-// src/app/page.tsx
+// pages/index.tsx
 "use client";
 import React, { useState, useEffect } from 'react';
-import BookList from '../app/components/BookList';
-import AddBookForm from '../app/components/AddBookForm';
-import { Book } from '../app/interfaces';
-import { fetchBooks } from '../app/api/fetchBooks';
+import BookList from '../components/BookList';
+import AddBookForm from '../components/AddBookForm';
+import { Book } from '../interfaces';
+import { fetchBooks } from '../api/fetchBooks';
 
 const Home: React.FC = () => {
   const [books, setBooks] = useState<Book[]>([]);
